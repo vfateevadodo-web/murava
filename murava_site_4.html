@@ -3,26 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Murava Flower Shop</title>
+    <title>Professional Flower Shop</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body { background-color: #f3f3f3; color: #333; font-family: Arial, sans-serif; }
+        header { background-color: #4CAF50; padding: 20px; text-align: center; color: white; }
+        nav { margin: 20px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .hero { background-image: url('hero-image.jpg'); height: 400px; background-size: cover; display: flex; align-items: center; justify-content: center; }
+        .hero h1 { background-color: rgba(0, 0, 0, 0.5); padding: 20px; color: white; }
+        .catalog { display: flex; flex-wrap: wrap; justify-content: space-around; padding: 20px; }
+        .card { background: white; border-radius: 5px; padding: 20px; margin: 10px; width: 200px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; padding: 20px; }
+        .gallery img { width: 100%; border-radius: 5px; }
+        .footer { background-color: #4CAF50; color: white; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Murava Flower Shop</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Our Flowers</h2>
-            <p>We offer a wide variety of fresh flowers for all occasions.</p>
-        </section>
-        <section>
-            <h2>Contact Us</h2>
-            <p>Email: contact@muravaflowers.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Murava Flower Shop</p>
-    </footer>
+<header>
+    <h1>Welcome to Our Flower Shop</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Catalog</a>
+        <a href="#">Gallery</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<div class="hero">
+    <h1>Fresh Flowers for Every Occasion</h1>
+</div>
+<section class="catalog">
+    <div class="card">
+        <h2>Roses</h2>
+        <img src="rose.jpg" alt="Roses">
+        <p>Beautiful red roses for a romantic gesture.</p>
+    </div>
+    <div class="card">
+        <h2>Tulips</h2>
+        <img src="tulips.jpg" alt="Tulips">
+        <p>Colorful tulips to brighten any day.</p>
+    </div>
+    <!-- More flower cards -->
+</section>
+<section class="gallery">
+    <h2>Our Gallery</h2>
+    <img src="gallery1.jpg" alt="Gallery Image 1">
+    <img src="gallery2.jpg" alt="Gallery Image 2">
+    <img src="gallery3.jpg" alt="Gallery Image 3">
+    <!-- More gallery images -->
+</section>
+<section class="reviews">
+    <h2>Customer Reviews</h2>
+    <p>"The flowers were beautiful and fresh!" - Customer A</p>
+    <p>"Great service and lovely arrangements!" - Customer B</p>
+</section>
+<section class="delivery">
+    <h2>Delivery Options</h2>
+    <p>We offer same-day delivery for all orders placed before 2 PM.</p>
+</section>
+<footer class="footer">
+    <p>&copy; 2026 Professional Flower Shop. All rights reserved.</p>
+</footer>
 </body>
 </html>
